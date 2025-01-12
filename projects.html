@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Poornima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        section {
+            padding: 100px 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            max-width: 800px;
+            max-height: 90%;
+            overflow-y: auto;
+            text-align: left;
+            position: relative;
+        }
+
+        .modal-content h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .modal-content p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .modal-content a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .modal-content a:hover {
+            text-decoration: underline;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5em;
+            color: #333;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section>
+        <h1>Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="card" onclick="openModal('modal1')">
+            <h2>Confidence Scoring to Detect Hallucinations in LLMs</h2>
+            <p><strong>Duration:</strong> Sept 2024 - Nov 2024</p>
+            <p><strong>Tech Stack:</strong> Python, PyTorch, QLoRA, Mistral 7B</p>
+        </div>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+                <h2>Confidence Scoring to Detect Hallucinations in LLMs</h2>
+                <p>Implemented the "LLMs Know More Than They Show" framework on the MedQuad dataset to detect hallucinations in large language models. Fine-tuned LLaMA 3.2 using QLoRA and utilized Mistral 7B for in-context learning to extract exact answer tokens. Achieved a 78% error detection accuracy using a logistic regression probing classifier.</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/sriharshapy/LLM-knows-more-than-they-show" target="_blank">LLMs Know More Than They Show</a></p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card" onclick="openModal('modal2')">
+            <h2>Image and Text Generation from Scratch</h2>
+            <p><strong>Duration:</strong> July 2024 - Aug 2024</p>
+            <p><strong>Tech Stack:</strong> Python, PyTorch, GANs, Transformers</p>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+                <h2>Image and Text Generation from Scratch</h2>
+                <p>Developed a GAN for image generation and a Transformer model for dialog text generation. Both models were implemented from scratch and achieved an inception score of 7.5 and a perplexity score of 3.7, respectively.</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Agzjy/NLP-Project-Team105/tree/master" target="_blank">NLP Project Team 105</a></p>
+                <p><strong>GAN Model:</strong> <a href="https://github.com/Mani676901/ML6140_project" target="_blank">GAN Implementation</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Poornima</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            let modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+

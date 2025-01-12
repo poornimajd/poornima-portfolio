@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poornima's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Hero Section */
+        #about {
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #about img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about-content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        #about-content h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+
+        #about-content h2 {
+            font-size: 1.3em;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        #about-me {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Added gap for one-space separation */
+        }
+
+        #about-me h3 {
+            font-size: 1.8em;
+            color: #000;
+        }
+
+        #about-me button {
+            padding: 8px 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #about-me button:hover {
+            background-color: #333;
+        }
+
+        #about-me p {
+            font-size: 1.4em;
+            color: #000;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+
+#about-me p, #interests p {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.8;
+}
+        #interests {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #interests strong {
+            display: block;
+            font-size: 1.4em;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        #interests p {
+            font-size: 0.9em;
+            color: #222;
+        }
+
+        #contact-section {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #contact-section h3 {
+            font-size: 1.8em;
+            color: #000;
+        }
+
+        #contact-info {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        #contact-info a img {
+            width: 40px;
+            height: auto;
+            border-radius: 0;
+        }
+	#about-me {
+	    margin-bottom: 20px;
+	    display: flex;
+	    align-items: center;
+	    gap: 30px; /* Adjust this value to control the space */
+	}
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="work.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about">
+        <img src="mypic.jpg" alt="Poornima Jaykumar Dharamdasani">
+        <div id="about-content">
+            <h1>Poornima Jaykumar Dharamdasani</h1>
+            <h2>Machine Learning Engineer</h2>
+
+            <!-- About Me Section -->
+            <div id="about-me">
+                <h3>About Me</h3>
+                <button onclick="window.open('resume.pdf')">Resume</button>
+            </div>
+            <p>I am Poornima, with 3 years of experience in developing computer vision and deep learning solutions for robotics and autonomous systems. My work spans from building 3D perception pipelines and sensor fusion for localization to deploying quantized models on edge devices. I am passionate about creating scalable AI solutions that deliver real-world impact, combining my expertise in MLOps, computer vision, and Gen AI.</p>
+
+            <!-- Interests Section -->
+            <div id="interests">
+                <strong>My Interests</strong>
+                <p>In my free time, I enjoy practicing classical singing, immersing myself in crime thrillers, and expressing creativity through painting.</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact-section">
+                <h3>Contact</h3>
+                <div id="contact-info">
+                    <a href="https://www.linkedin.com/in/poornima-jd-97694a166/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:jaykumardharamdasa.p@northeastern.edu"><img src="outlook.jpeg" alt="Outlook"></a>
+                    <a href="https://github.com/poornimajd" target="_blank"><img src="github.jpeg" alt="GitHub"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Poornima Jaykumar Dharamdasani</p>
+    </footer>
+</body>
+</html>
+
