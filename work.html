@@ -169,7 +169,12 @@
         <!-- Danfoss Power Solutions -->
         <div class="card" onclick="openModal('modal1')">
             <h2>Danfoss Power Solutions</h2>
-            <p><strong>Role:</strong> Computer Vision Intern </p>
+            <p>
+        <strong>Role:</strong> 
+        <a href="#" onclick="openModal('modal1')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            Computer Vision Intern
+        </a>
+        </p>
             <p><strong>Duration:</strong> May 2024 – Dec 2024</p>
             <p><strong>Tech Stack:</strong> PyTorch, Jetson Orin, ROS1, WandB, Python, OpenCV</p>
         </div>
@@ -181,34 +186,42 @@
                 <h2>Danfoss Power Solutions</h2>
                 <h3>Problem Statement:</h3>
                 <ul>
-                    <li>Build and evaluate a 3D person detection pipeline on multiple stereo cameras (ZED 2i and Multisense S30) to assess performance under diverse environmental conditions. The project aimed to support an underground mining application and provide stakeholders with a cost-performance analysis of the cameras.</li>
-                    <li>Research and shortlist MLOps tools for tracking machine learning experiments to reduce technical debt and improve reproducibility.</li>
+                    <li>Build and evaluate a <b>3D person detection</b>b pipeline on multiple stereo cameras (ZED 2i and Multisense S30) to assess performance under diverse environmental conditions. The project aimed to support an underground mining application and provide stakeholders with a cost-performance analysis of the cameras.</li>
+                    <li>Research and shortlist <b>MLOps</b> tools for tracking machine learning experiments to reduce technical debt and improve reproducibility.</li>
                 </ul>
                 <h3>Work Done:</h3>
                 <ul>
-                    <li>Developed a YOLOv8-based 3D person detection pipeline using depth estimation from stereo cameras. Implemented a heuristic-based algorithm to calculate the centroid distance of detected persons, optimizing the pipeline for deployment on Jetson Orin.</li>
-                    <li>Built an automatic calibration and synchronization system for stereo cameras and 3D LiDAR to ensure accurate sensor alignment and multi-sensor data fusion.</li>
-                    <li>Researched 10 MLOps tools and shortlisted Weights & Biases (WandB) based on features and cost. Implemented a custom U-Net model for road and lane segmentation using the CamVid dataset, integrating WandB for experiment tracking and versioning.</li>
+                    <li>Developed a <b>YOLOv8-based 3D person detection</b> pipeline using depth estimation from stereo cameras. Implemented a heuristic-based algorithm to calculate the centroid distance of detected persons, filtering outliers, optimizing the pipeline for deployment on <b>Jetson Orin</b>.</li>
+                    <li>
+    Leveraged an open-source <b>mutual information-based targetless auto-calibration method</b> to automatically align <b>stereo cameras</b> and <b>3D LiDAR</b> for multi-sensor fusion. Ensured precise sensor alignment for <b>multi-sensor data fusion</b>, significantly reducing manual efforts and saving $6,000 annually.
+</li>
+                    <li>Researched 10 MLOps tools and shortlisted <b>Weights & Biases (WandB)</b> based on features and cost. Implemented a custom U-Net model for road and lane segmentation using the CamVid dataset, integrating WandB for experiment tracking and versioning.</li>
                 </ul>
                 <h3>Challenges Faced:</h3>
                 <ul>
-                    <li>Encountered outlier points in the ground truth point cloud, requiring robust handling using simple heuristics to improve accuracy.</li>
+                    <li>Encountered <b>outlier points</b> in the ground truth point cloud, requiring robust handling using simple heuristics to improve accuracy.</li>
                     <li>Optimized data retrieval speed from LiDAR and cameras on Jetson Orin to ensure real-time performance.</li>
-                    <li>Implemented accurate extrinsics between the RGB and depth cameras in the Multisense S30 to ensure precise depth estimation and sensor alignment.</li>
+                    <li>To setup a auto-calibration between different sensors to acheive fusion accuracy comparable to manual methods and managing <b>transformations</b> between different sensors in the Multisense S30,  ZED 2i and and <b>3D LiDAR</b>. 
+                </li>
                 </ul>
                 <h3>Results:</h3>
                 <ul>
-                    <li>Achieved 10ms software-based synchronization accuracy between stereo cameras and 3D LiDAR, improving sensor fusion reliability.</li>
-                    <li>Achieved <6-pixel reprojection error for automatic calibration between cameras and LiDAR, eliminating manual calibration.</li>
+                    <li>Achieved <b>10ms software-based synchronization accuracy</b> between stereo cameras and 3D LiDAR, improving sensor fusion reliability.</li>
+                    <li>Achieved <b><6-pixel reprojection error</b> for automatic calibration between cameras and LiDAR, eliminating manual calibration.</li>
                     <li>Achieved 98% detection accuracy up to 15 meters indoors and 95% accuracy up to 25 meters indoors for both cameras. The Multisense S30 outperformed the ZED 2i in both indoor and limited outdoor test cases.</li>
-                    <li>Successfully integrated WandB for tracking, versioning, and automation, improving the team's ability to manage experiments and workflows efficiently.</li>
+                    <li>Successfully integrated WandB for <b>tracking, versioning, and automation</b>, improving the team's ability to manage experiments and workflows efficiently.</li>
                 </ul>
             </div>
         </div>
 <!-- ARTPARK, IISc -->
         <div class="card" onclick="openModal('modal2')">
             <h2>ARTPARK (AI & Robotics Technology Park)</h2>
-            <p><strong>Role:</strong> Computer Vision & Robotics Engineer</p>
+            <p>
+        <strong>Role:</strong> 
+        <a href="#" onclick="openModal('modal2')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            Computer Vision & Robotics Engineer
+        </a>
+        </p>
             <p><strong>Duration:</strong> Apr 2021 – Jul 2023</p>
             <p><strong>Tech Stack:</strong> PyTorch, Jetson Nano, ROS1, ROS2, Python, C++, OpenCV</p>
         </div>
@@ -221,43 +234,44 @@
 
         <h3>Problem Statement:</h3>
         <ul>
-            <li>Develop a novel method to quantify spatially-varying uncertainty associated with external-camera-based pose estimates for autonomous mobile robots in indoor environments.</li>
-            <li>Use this uncertainty model as an observation model for Adaptive Monte Carlo Localization (AMCL) to improve localization accuracy in sparse and dynamic settings.</li>
-            <li>Mentor a team of interns to build the next version of the uncertainty estimation model for external-camera-based localization.</li>
-            <li>Modularize the legacy AMCL code to improve maintainability and contribute enhancements to the open-source ROS2 repository.</li>
-            <li>Implement a visual camera-LiDAR navigation system by fusing external camera data with LiDAR to enhance robot localization in indoor office environments.</li>
+            <li>Develop a novel method to quantify <b>spatially-varying uncertainty</b> associated with external-camera-based pose estimates for autonomous mobile robots in indoor environments.</li>
+            <li>Use this uncertainty model as an observation model along with traditional <b>computer vision techniques and sensor fusion</b> for <b>Adaptive Monte Carlo Localization (AMCL)</b> to improve localization accuracy in sparse and dynamic settings.</li>
+            <li>Mentor a team of interns to develop <b>deep learning based pose estimation</b> using external CCTV cameras.</li>
+            <li>Modularize the legacy AMCL code to improve <b>maintainability</b> and contribute enhancements to the <b>open-source ROS2 repository</b>.</li>
         </ul>
 
         <h3>Work Done:</h3>
         <ul>
-            <li>Designed a method to calculate the upper bound on pose estimation errors from external cameras by considering errors in homography estimation for flat surfaces, corner point detection accuracy, and camera resolution.</li>
-            <li>Derived an error formula by differentiating the homography equation to measure how small pixel variations translate into real-world position and angular errors.</li>
-            <li>Modeled the pose uncertainty as a Gaussian distribution, with the mean representing the estimated pose and the variance matrix capturing spatially-varying errors.</li>
-            <li>Integrated this uncertainty model into the AMCL observation model, improving localization accuracy.</li>
-            <li>Developed a visual navigation system by fusing external camera data with 3D LiDAR for better robot localization in dynamic office environments.</li>
-            <li>Tuned navigation parameters for the indoor setting to ensure robustness in environments with varying obstacles and lighting conditions.</li>
-            <li>Mentored 4 interns on extending the camera-based localization model and building a pipeline to estimate pose uncertainties.</li>
-            <li>Refactored and modularized the legacy AMCL codebase to make it maintainable and contributed improvements to the ROS2 open-source community.</li>
+            <li><b>Developed a method to calculate the upper bound on pose estimation errors</b> from external cameras by analyzing errors in <b>homography estimation</b> for flat surfaces, <b>corner point detection accuracy</b>, and <b>camera resolution</b>. This approach included <b>deriving an error formula</b> by differentiating the <b>homography equation</b>, enabling the measurement of how small pixel variations translate into real-world <b>position</b> and <b>angular errors</b>.</li>
+            <li><b>Modeled pose uncertainty</b> as a <b>Gaussian distribution</b>, where the mean represents the <b>estimated pose</b> and the variance matrix captures <b>spatially-varying errors</b>. This uncertainty model was seamlessly <b>integrated into the AMCL observation model</b>, leading to a significant improvement in <b>localization accuracy</b>.</li>
+            <li>
+    Leveraged an open-source <b>Spatio-Temporal Voxel Layer repository</b> for an Intel RealSense camera and 2D onboard LiDAR to enhance obstacle detection and mapping in indoor office environments. Tuned critical navigation parameters, including <b>obstacle inflation radius</b>, <b>costmap resolution</b>, and <b>voxel decay rate</b>, to ensure robust performance in settings with dynamic obstacles, varying lighting conditions, and tight spaces.
+</li>
+    <li>
+        Mentored 4 interns on extending the camera-based localization model to estimate robot pose without markers using deep learning techniques. Guided them in training <b>YOLOv8n</b> for <b>2D keypoint estimation</b> on synthetic data generated from <b>Unity3D</b> and implementing a pipeline to compute pose using <b>PnP</b> from 2D and 3D points. In real-world scenarios, the model performed <b>2D point estimation</b> using YOLO, validated with <b>ground truth</b> data from a motion capture lab.
+    </li>
+    <li>
+        Refactored and modularized the legacy AMCL codebase to improve maintainability and contributed enhancements as an <b>open-source contribution</b> to the <b>ROS2 repository</b>.
+    </li>
+
         </ul>
 
         <h3>Challenges Faced:</h3>
         <ul>
-            <li>Estimating the ground truth pose of the robot from 3D LiDAR data to validate the accuracy of the camera-based pose estimates.</li>
-            <li>Developing a theoretical formulation to model camera-based pose uncertainty by considering errors from homography estimation, corner detection, and camera resolution.</li>
-            <li>Ensuring the uncertainty model accurately represents spatial variations in pose errors as the robot moves further from the camera.</li>
-            <li>Tuning the visual camera-LiDAR navigation system parameters to ensure robust robot performance in dynamic indoor office environments with varying lighting and obstacles.</li>
-            <li>Understanding and refactoring the AMCL legacy codebase, which was complex and undocumented.</li>
+            <li>Estimating the ground truth pose of the robot from <b>3D LiDAR data</b> to validate the accuracy of the camera-based pose estimates.</li>
+            <li>Developing a theoretical formulation to model camera-based pose uncertainty by considering errors from <b>homography estimation, corner detection, and camera resolution</b>.</li>
+            <li>Tuning the <b>visual camera-LiDAR navigation</b> system parameters to ensure robust robot performance in dynamic indoor office environments with varying lighting and obstacles.</li>
+            <li>Understanding and refactoring the <b>AMCL legacy codebase</b>, which was complex and undocumented.</li>
         </ul>
 
         <h3>Results:</h3>
         <ul>
-            <li>Enhanced robot localization by fusing CCTV camera data with onboard LiDAR using computer vision and particle filter techniques, achieving a 60% improvement in localization accuracy.</li>
-            <li>Achieved upper-bound error quantification for camera-based pose estimation and verified that errors increase with distance from the camera in both sparse and dynamic environments.</li>
-            <li>The project resulted in a paper publication and patent filing, demonstrating the novel approach to uncertainty estimation for camera-based localization.</li>
-            <li>Conducted effective pilot trials at the JRD Tata Memorial Library, showcasing the enhanced localization and navigation system.</li>
-            <li>Mentored a team of 4 interns who contributed to the next iteration of the robot pose estimation system using camera-LiDAR fusion, with results presented at the ICRA Workshop 2023.</li>
-            <li>Achieved robust visual navigation by fusing camera and LiDAR data, tuned for indoor office environments.</li>
-            <li>Modularized the AMCL codebase and contributed the improvements to the ROS2 open-source repository, making it easier to maintain and extend.</li>
+            <li>Enhanced robot localization by fusing CCTV camera data with onboard LiDAR using computer vision and particle filter techniques, achieving a <b>60% improvement in localization accuracy</b>.</li>
+            <li>Achieved upper-bound error quantification for camera-based pose estimation and verified that <b>errors increase with distance</b> from the camera in both sparse and dynamic environments.</li>
+            <li>The project resulted in a <b>paper publication and patent filing</b>, demonstrating the novel approach to uncertainty estimation for camera-based localization.</li>
+            <li>Conducted effective pilot trials at the JRD Tata Memorial Library, showcasing the enhanced navigation system,with results presented at the <b>ICRA Workshop 2023</b>.</li>
+            <li>Mentored a team of 4 interns who contributed to the next iteration of the robot pose estimation system using deep learning models.</li>
+            <li>Modularized the AMCL codebase and contributed the improvements to the <b>ROS2 open-source repository</b>, making it easier to maintain and extend.</li>
         </ul>
     </div>
 </div>
@@ -266,7 +280,12 @@
         <!-- RBCCPS, IISc -->
         <div class="card" onclick="openModal('modal3')">
             <h2>Robert Bosch Center for Cyber-Physical Systems</h2>
-            <p><strong>Role:</strong> Computer Vision Intern</p>
+            <p>
+        <strong>Role:</strong> 
+        <a href="#" onclick="openModal('modal3')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            Computer Vision Intern
+        </a>
+        </p>
             <p><strong>Duration:</strong> Mar 2020 – Apr 2021</p>
             <p><strong>Tech Stack:</strong> TensorFlow, Jetson Nano, TensorRT, 3D Computer vision</p>
         </div>
@@ -280,35 +299,31 @@
 
         <h3>Problem Statement:</h3>
         <ul>
-            <li>Develop a deep learning-based solution for unmarked Indian road segmentation across various daylight conditions to enhance safety and navigation on Indian roads.</li>
+            <li>Develop a <b>deep learning-based</b> solution for <b>unmarked Indian road segmentation</b> across various daylight conditions to enhance safety and navigation on Indian roads.</li>
             <li>Build a self-supervised monocular depth estimation pipeline tailored to Indian road conditions, using 3D LiDAR data as ground truth for validation.</li>
-            <li>Implement a human pose estimation and compliance detection system to ensure worker safety on construction sites, particularly for detecting compliance on stairways (e.g., whether a person is moving safely up or down stairs).</li>
+            <li>Implement a <b>human pose estimation and compliance detection</b> system to ensure worker safety on construction sites, particularly for detecting compliance on stairways (e.g., whether a person is moving safely up or down stairs).</li>
         </ul>
 
         <h3>Work Done:</h3>
         <ul>
-            <li>Collected custom data from Indian roads using a 3D LiDAR sensor as ground truth. The data collection involved manual calibration of the LiDAR and cameras to ensure accurate depth measurements.</li>
-            <li>Developed a deep learning-based unmarked road segmentation model using TensorFlow. The model was optimized for runtime on Nvidia Jetson Nano using Nvidia TensorRT to achieve efficient deployment on edge devices.</li>
-            <li>Implemented a self-supervised monocular depth estimation pipeline using the Monodepth2 architecture in PyTorch, achieving 85% accuracy within 5-6 meters in outdoor environments. This pipeline was visually compared with stereo matching methods from OpenCV, and the results were found to be comparable.</li>
-            <li>Used CenterNet for human pose estimation to track workers on construction sites. Built a heuristic-based compliance detection system to monitor safety on stairways, specifically detecting if a person was moving safely up or down stairs.</li>
-            <li>Designed and demonstrated the compliance detection and human pose tracking system to Larsen & Toubro (L&T) construction clients, showing its potential for improving workplace safety.</li>
+            <li>Collected custom data from Indian roads using a <b>3D LiDAR sensor</b> as ground truth. The data collection involved manual fusion of the LiDAR and cameras data to ensure accurate ground truth.</li>
+            <li>Developed a pipeline for unmarked road segmentation model using ShelfNet model. The model was optimized for runtime on Nvidia Jetson Nano using <b>Nvidia TensorRT</b> to achieve efficient deployment on edge devices.</li>
+            <li>Implemented a self-supervised monocular depth estimation pipeline using the <b>Monodepth2 architecture in PyTorch</b>, achieving 85% accuracy within 5-6 meters in outdoor environments. This pipeline was visually compared with stereo matching methods from OpenCV, and the results were found to be comparable.</li>
+            <li>Used <b>CenterNet for human pose estimation</b> to estimate the pose of the workers and <b>DeepSORT</b> to track workers on construction sites. Built a heuristic-based compliance detection system to monitor safety on stairways, specifically detecting if a person was moving safely up or down stairs.</li>
+            <li>Designed and demonstrated the compliance detection and human pose tracking system to <b>Larsen & Toubro (L&T) construction clients</b>, showing its potential for improving workplace safety.</li>
         </ul>
 
         <h3>Challenges Faced:</h3>
         <ul>
-            <li>Ground Truth Collection: Manually calibrating the LiDAR and cameras to ensure accurate depth measurements for validation of the depth estimation pipeline.</li>
-            <li>Depth Estimation Accuracy: Achieving reliable depth estimation using a monocular camera in outdoor environments was challenging due to varying lighting conditions and surface textures.</li>
-            <li>Comparing Depth Estimation Methods: It was important to ensure that the self-supervised monocular depth estimation method (Monodepth2) performed comparably to traditional stereo matching methods from OpenCV.</li>
-            <li>Compliance Detection: Designing a robust heuristic for detecting compliance on stairways required extensive experimentation and tuning to handle diverse scenarios, such as different stair shapes and lighting conditions.</li>
+            <li><b>Ground Truth Collection</b>: Manually calibrating the LiDAR and cameras to ensure accurate depth measurements for validation of the depth estimation pipeline.</li>
+            <li> Data availability for Indian roads was limited.</li>
         </ul>
 
         <h3>Results:</h3>
         <ul>
-            <li>Successfully implemented a deep learning-based unmarked Indian road segmentation model in TensorFlow, optimized for runtime on Nvidia Jetson Nano, achieving 87% accuracy in various daylight conditions.</li>
-            <li>Developed a self-supervised monocular depth estimation pipeline in PyTorch, achieving 85% accuracy within 5-6 meters outdoors. The results were visually comparable to traditional stereo matching methods.</li>
+            <li>Successfully implemented a deep learning-based unmarked Indian road segmentation model, optimized for runtime on Nvidia Jetson Nano, achieving <b>87% accuracy</b> in various daylight conditions.</li>
+            <li>Developed a self-supervised monocular depth estimation pipeline in PyTorch, achieving <b>85% accuracy within 5-6 meters outdoors</b>.</li>
             <li>Built a human pose estimation and compliance detection system using CenterNet and heuristics, specifically for monitoring stairway compliance on construction sites.</li>
-            <li>Demonstrated the compliance detection and human pose tracking system to Larsen & Toubro (L&T) construction clients, leading to further business engagement.</li>
-            <li>Delivered a proof of concept for self-supervised depth estimation and compliance detection, showcasing its potential for improving worker safety and navigation in real-world environments.</li>
         </ul>
     </div>
 </div>
@@ -343,4 +358,3 @@
     </script>
 </body>
 </html>
-
