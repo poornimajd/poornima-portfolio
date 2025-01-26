@@ -175,7 +175,11 @@
 
         <!-- Project 1 -->
         <div class="card" onclick="openModal('modal1')">
-            <h2>Confidence Scoring to Detect Hallucinations in LLMs</h2>
+            <h2>
+        <a href="#" onclick="openModal('modal1')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            Confidence Scoring to Detect Hallucinations in LLMs
+        </a>
+        </h2>
             <p><strong>Duration:</strong> Sept 2024 - Nov 2024</p>
             <p><strong>Tech Stack:</strong> Python, PyTorch, QLoRA, Mistral 7B</p>
         </div>
@@ -185,26 +189,56 @@
             <div class="modal-content">
                 <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
                 <h2>Confidence Scoring to Detect Hallucinations in LLMs</h2>
-                <p>Implemented the "LLMs Know More Than They Show" framework on the MedQuad dataset to detect hallucinations in large language models. Fine-tuned LLaMA 3.2 using QLoRA and utilized Mistral 7B for in-context learning to extract exact answer tokens. Achieved a 78% error detection accuracy using a logistic regression probing classifier.</p>
+                <p>Implemented "LLMs Know More Than They Show" paper on the MedQuad dataset to detect hallucinations in LLMs. Fine-tuned <b>LLaMA 3.2</b> with <b>QLoRA</b> and used <b>Mistral 7B</b> for in-context learning, achieving <b>78% error detection accuracy</b> with a logistic regression probing classifier.</p>
                 <p><strong>GitHub:</strong> <a href="https://github.com/sriharshapy/LLM-knows-more-than-they-show" target="_blank">LLMs Know More Than They Show</a></p>
+                <p><strong>Report:</strong> <a href="https://sidn.baulab.info/Sriharsha'sFinalProject/" target="_blank">View Report</a></p>
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="card" onclick="openModal('modal2')">
-            <h2>Image and Text Generation from Scratch</h2>
-            <p><strong>Duration:</strong> July 2024 - Aug 2024</p>
-            <p><strong>Tech Stack:</strong> Python, PyTorch, GANs, Transformers</p>
+            <h2>
+        <a href="#" onclick="openModal('modal2')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            Deep Learning Architectures from Scratch: Transformers for Vision and Text
+        </a>
+        </h2>
+            <p><strong>Duration:</strong> May 2024 - July 2024</p>
+            <p><strong>Tech Stack:</strong> Python, Tensorflow, Keras, PyTorch, Transformers</p>
         </div>
 
         <!-- Modal 2 -->
         <div id="modal2" class="modal">
             <div class="modal-content">
                 <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
-                <h2>Image and Text Generation from Scratch</h2>
-                <p>Developed a GAN for image generation and a Transformer model for dialog text generation. Both models were implemented from scratch and achieved an inception score of 7.5 and a perplexity score of 3.7, respectively.</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Agzjy/NLP-Project-Team105/tree/master" target="_blank">NLP Project Team 105</a></p>
-                <p><strong>GAN Model:</strong> <a href="https://github.com/Mani676901/ML6140_project" target="_blank">GAN Implementation</a></p>
+                <h2>Deep Learning Architectures from Scratch: Transformers for Vision and Text</h2>
+                <p><b>Image Captioning</b>: Designed in <b>TensorFlow</b> with <b>Inception V3</b> as a feature extractor, trained on <b>Flickr 8k</b>, and achieved a BLEU-1 score of 0.43. <b>Text Generation</b>: Implemented a <b>NanoGPT in PyTorch</b>, trained on Tiny Shakespeare dataset, achieving a perplexity of 3.84 and generating coherent Shakespeare-like text.</p>
+                <p><strong>Image Captioning:</strong> <a href="https://github.com/therrshan/image-captioning" target="_blank">GitHub</a></p>
+                <p><strong>Report:</strong> <a href="https://github.com/therrshan/image-captioning/blob/main/Documentation/Report.pdf" target="_blank">View Report</a></p>
+                <p><strong>NanoGPT:</strong> <a href="https://github.com/Agzjy/NLP-Project-Team105/tree/master" target="_blank">GitHub</a></p>
+                <p><strong>Report:</strong> <a href="https://github.com/Agzjy/NLP-Project-Team105/blob/master/NanoGPT_from_Scratch.pdf" target="_blank">View Report</a></p>
+
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card" onclick="openModal('modal3')">
+            <h2>
+        <a href="#" onclick="openModal('modal3')" style="text-decoration: underline; color: #00bcd4; cursor: pointer;">
+            GAN from Scratch for Image Generation
+        </a>
+        </h2>
+            <p><strong>Duration:</strong> Mar 2024 - May 2024</p>
+            <p><strong>Tech Stack:</strong> Python, PyTorch, GANs</p>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+                <h2>GAN from Scratch for Image Generation</h2>
+                <p>Developed a <b>DC-GAN</b> from scratch in PyTorch to generate and reconstruct images from the 60,000-image <b>CIFAR-10 dataset</b>, achieving an <b>Inception Score (IS) of 5.5</b> and FID of 58.4, demonstrating effective image generation and reconstruction capabilities.</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Mani676901/ML6140_project" target="_blank">GAN Implementation</a></p>
+                <p><strong>Report:</strong> <a href="https://github.com/Mani676901/ML6140_project/blob/main/Report.pdf" target="_blank">View Report</a></p>
             </div>
         </div>
     </section>
